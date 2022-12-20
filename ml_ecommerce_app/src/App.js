@@ -1,8 +1,12 @@
 import './App.css';
+import AppRouter from './routes/AppRouter';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <h1 className='text-danger'>Esto es un titulo</h1>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
