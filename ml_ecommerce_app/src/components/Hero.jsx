@@ -1,6 +1,14 @@
-function Hero() {
+const Hero = () => {
     return ( 
-        <h1>Componente Hero</h1>
+        <div className="hero">
+            <div className="hero-inner">
+                <h1>Adios Rutina</h1>
+                <h2>Cerveza Artesanal</h2>
+                <a href="https://example.com" className="btn">Go ahead...</a>
+
+            </div>
+
+        </div>
      );
 }
 

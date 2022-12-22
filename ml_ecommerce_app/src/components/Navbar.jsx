@@ -2,14 +2,18 @@ import { Link, NavLink} from 'react-router-dom'
 
 const Navbar = () => {
     function menuResponsive() {
-
+        let x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     };
-
     return ( 
         <header className="site-header sticky-top">
             <div className="topnav" id="myTopnav">
-                <Link to="/home"> CafeMX</Link>
-                <NavLink to="/home">Productos</NavLink>
+                <Link to="/home"> Maltalab</Link>
+                <NavLink to="/products">Productos</NavLink>
                 <NavLink to="/checkout">Carrito</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/login">Login</NavLink>
@@ -19,10 +23,7 @@ const Navbar = () => {
                     <i className="fa fa-bars" />
                 </a>
             </div>
-
-
         </header>
-
      );
 }
 
