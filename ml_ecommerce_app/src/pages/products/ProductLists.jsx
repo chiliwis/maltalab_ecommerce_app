@@ -1,5 +1,37 @@
 import Hero from "../../components/Hero";
-let products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+import { Link, NavLink} from 'react-router-dom';
+//let products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+let products = [
+    {
+        id: 1,
+        name: 'Blonde',
+        price: 55,
+        description: 'Cerveza clara y ligera para el calor',
+        img: 'https://picsum.photos/200/150'
+    },
+    {
+        id: 2,
+        name: 'Porter',
+        price: 60,
+        description: 'Cerveza obscura, ideal con postres',
+        img: 'https://picsum.photos/200/150'
+    },
+    {
+        id: 3,
+        name: 'Mole Porter',
+        price: 90,
+        description: 'Cerveza obscura, con preparado de mole dulce',
+        img: 'https://picsum.photos/200/150'
+    },
+    {
+        id: 4,
+        name: 'Weenter',
+        price: 120,
+        description: 'Cerveza obscura, invernal',
+        img: 'https://picsum.photos/200/150'
+    },
+];
 
 const ProductLists = () => {
     return (
@@ -20,15 +52,16 @@ const ProductLists = () => {
                         <div className="row">
                             {products.map((product) => {
                                 return (
-                                    <div className="col-sm-6 col-md-4" key={product}>
+                                    <div className="col-sm-6 col-md-4" key={product.id}>
                                         <div className="card mb-4">
                                             <img src="https://picsum.photos/200/150" className="card-img-top" alt='test' />
 
                                             <div className="card-body">
-                                                <h4 className='card-title'>$350.00</h4>
-                                                <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                                <h4 className='card-title'>${product.price}</h4>
+                                                <h4 className='card-title'>{product.name}</h4>
+                                                <p className="card-text">{product.description}</p>
                                                 <a href="#" className="btn btn-primary btn-sm d-grid">Carrito</a>
-                                                <a href="#" className="btn btn-warning btn-sm d-grid mt-2">Detalle</a>
+                                                <Link to="/detail-product" className="btn btn-warning btn-sm d-grid mt-2">Detalle</Link>
                                             </div>
                                         </div>
                                     </div>
