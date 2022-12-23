@@ -16,7 +16,8 @@
     /* ADD THIS LINE */
 
     /* Background styles */
-    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-coffee-fresh-brown-poster-banner-background-image_133007.jpg');
+    /* background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-coffee-fresh-brown-poster-banner-background-image_133007.jpg'); */
+    background-image: url(components/Pics/completa.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

@@ -60,7 +60,7 @@ const ProductLists = () => {
                                                 <h4 className='card-title'>${product.price}</h4>
                                                 <h4 className='card-title'>{product.name}</h4>
                                                 <p className="card-text">{product.description}</p>
-                                                <a href="#" className="btn btn-primary btn-sm d-grid">Carrito</a>
+                                                <Link to="/checkout" className="btn btn-primary btn-sm d-grid">Carrito</Link>
                                                 <Link to="/detail-product" className="btn btn-warning btn-sm d-grid mt-2">Detalle</Link>
                                             </div>
                                         </div>
