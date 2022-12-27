@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero";
 import { Link, NavLink} from 'react-router-dom';
+import Blonde from "../../components/pics/Blonde";
 //let products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let products = [
@@ -8,7 +9,8 @@ let products = [
         name: 'Blonde',
         price: 55,
         description: 'Cerveza clara y ligera para el calor',
-        img: 'https://picsum.photos/200/150'
+        // img: 'https://picsum.photos/200/150'
+        img: url(components/pics/Blonde)
     },
     {
         id: 2,
@@ -16,6 +18,7 @@ let products = [
         price: 60,
         description: 'Cerveza obscura, ideal con postres',
         img: 'https://picsum.photos/200/150'
+        // img: url(src/components/pics/Porter)
     },
     {
         id: 3,
@@ -54,7 +57,8 @@ const ProductLists = () => {
                                 return (
                                     <div className="col-sm-6 col-md-4" key={product.id}>
                                         <div className="card mb-4">
-                                            <img src="https://picsum.photos/200/150" className="card-img-top" alt='test' />
+                                            {/* <img src="https://picsum.photos/200/150" className="card-img-top" alt='test' /> */}
+                                            <img className="card-img-top">{product.img}</img>
 
                                             <div className="card-body">
                                                 <h4 className='card-title'>${product.price}</h4>
