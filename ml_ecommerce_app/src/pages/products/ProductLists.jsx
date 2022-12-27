@@ -1,6 +1,6 @@
 import Hero from "../../components/Hero";
 import { Link, NavLink} from 'react-router-dom';
-import Blonde from "../../components/pics/Blonde";
+
 //let products = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 let products = [
@@ -10,7 +10,7 @@ let products = [
         price: 55,
         description: 'Cerveza clara y ligera para el calor',
         // img: 'https://picsum.photos/200/150'
-        img: url(components/pics/Blonde)
+        img: 'components/pics/Blonde'
     },
     {
         id: 2,
