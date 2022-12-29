@@ -9,8 +9,8 @@ let products = [
         name: 'Blonde',
         price: 55,
         description: 'Cerveza clara y ligera para el calor',
-        // img: 'https://picsum.photos/200/150'
-        img: 'components/pics/Blonde'
+        img: 'https://picsum.photos/200/150'
+        // img: 'components/pics/Blonde'
     },
     {
         id: 2,
@@ -57,8 +57,8 @@ const ProductLists = () => {
                                 return (
                                     <div className="col-sm-6 col-md-4" key={product.id}>
                                         <div className="card mb-4">
-                                            {/* <img src="https://picsum.photos/200/150" className="card-img-top" alt='test' /> */}
-                                            <img className="card-img-top">{product.img}</img>
+                                            <img src="https://picsum.photos/200/150" className="card-img-top" alt='test' />
+                                            {/* <div className="card-img-top">{product.img}> */}
 
                                             <div className="card-body">
                                                 <h4 className='card-title'>${product.price}</h4>
